@@ -1,0 +1,114 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+      
+body {
+    background-color: rgb(8, 8, 8);
+}
+
+/* header */
+header h1 {
+    color: rgb(241, 232, 232);
+    font-size: 6rem;
+    text-align: center;
+    padding: 20px;
+}
+
+/* parte principal de la pagina */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 30px;
+}
+
+/* tarjetas de fotos */
+.card {
+    width: 100%;
+    border: 5px solid rgb(247, 203, 203);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(65, 63, 63);
+    transition: all 0.2s; /* Corregir coma */
+    background-color: white;
+}
+
+.card:hover {
+    transform: scale(1.02); /* Corregir coma y añadir punto */
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card > h3 {
+    color: rgb(15, 15, 17);
+    font-size: 4rem; /* Corregir unidad de medida */
+    text-align: center;
+    padding: 3px 5px;
+    background-color: rgb(221, 215, 215);    
+}
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: green;
+    }
+    main{
+        grid-template-columns: fr fr;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: rgb(22, 25, 207);
+    }
+    main{
+        grid-template-columns: fr fr;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: rgb(134, 34, 101);
+    }
+    main{
+        grid-template-columns: fr fr fr;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: rgb(190, 180, 27);
+    }
+    main{
+        grid-template-columns: fr fr fr fr ;
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: rgb(6, 138, 143);
+    }
+    main{
+        grid-template-columns: fr fr fr fr fr fr;
+    }
+}
+
+
+
+
+
+
+    
+
+
